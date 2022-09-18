@@ -38,6 +38,9 @@
     background-color: #050B1C !important;
 }
 
+.center-content{
+  margin: auto !important;
+}
 @media (max-width: 800px) {
   .width-full{
     width: 80% !important;
@@ -103,6 +106,12 @@ ul li a:hover{
 }
 img.logo{
   float: left !important;
+}
+
+.panel_btn:hover{
+  border: none !important;
+  font-weight: 550 !important;
+  text-decoration: overline !important;
 }
 
 /*End Of Header Component Custom Style */
