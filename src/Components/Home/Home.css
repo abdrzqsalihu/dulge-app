@@ -1,0 +1,493 @@
+/* Hero Component Custom Style  */
+
+.form-inline {  
+    display: flex !important;
+    flex-flow: row wrap !important;
+    align-items: center !important;
+  }
+  
+  .form-inline input {
+    vertical-align: middle !important;
+    margin: 0 !important;
+    background-color: #fff !important;
+    /* border: 1px solid #ddd !important; */
+    outline: none !important;
+    width: 55% !important;
+    padding-left: 10px !important;
+    height: 36px !important;
+    border: none !important;
+  
+  }
+  .form-inline button {
+    background: #1B89FA !important;
+    text-transform: none !important;
+    border-radius: 10px !important;
+    height: 44px !important;
+  }
+
+  .form-inline input[type=email] {
+    outline: none !important;
+  }
+  
+  .form-inline input[type=email]:focus {
+    border-radius: 10px !important;
+    outline: 1px solid #c4c4c4 !important;
+  }
+
+  @media (max-width:1500px) {
+    .intro{
+      width: 130% !important;
+    }
+}
+
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0 !important;
+      width: 100% !important;
+    }
+    
+    .form-inline {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    .intro{
+      width: 100% !important;
+    }
+  }
+
+
+
+  
+  .boxshadow{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .highlight-container, .highlight {
+    position: relative;
+    color: #ffffffe3 !important;
+  }
+  
+  .highlight-container {
+    display: inline-block;
+  }
+  .highlight-container:before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: #1B89FA;
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 37px 190px 27px 50px;
+  }
+  
+  /* /* End of Hero Component Custom Style  * */
+
+
+
+  /* Grid Compartment Custom Style */
+   
+
+  /* /* End of Grid Component Custom Style  * */
+
+
+
+  
+
+  /* Compartment Component Custom Style  */
+    @media (max-width:1500px) {
+    .compartment-adjust{
+      width: 135% !important;
+    }
+    .compartment-adjust-left{
+      margin-top: 10% !important;
+      width: 110% !important;
+      margin-left: -20% !important;
+    }
+    .compartment-adjust-right{
+      margin-top: 11% !important;
+      width: 108% !important;
+      margin-left: 15% !important;
+
+    }
+  }
+  @media (max-width: 800px) {
+    .compartment-adjust{
+      width: 100% !important;
+    }
+    .compartment-adjust-left{
+      margin-bottom: 10% !important;
+      width: 100% !important;
+      margin-left: 0% !important;
+    }
+    .compartment-adjust-right{
+      margin-top: 11% !important;
+      width: 100% !important;
+      margin-left: 0% !important;
+
+    }
+  }
+/* End Of Compartment Component Custom Style  */
+
+
+
+
+/* Feature Component Custom Style  */
+  .bg-gray{
+    background-color: #ECECEC !important;
+  }
+
+  .feature-highlight-container, .highlight {
+    position: relative;
+    color: #ffffffe3 !important;
+  }
+  
+  .feature-highlight-container {
+    display: inline-block;
+  }
+  .feature-highlight-container:before {
+    content: " ";
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: #1B89FA;
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 20% 25% 20% 24%;
+    padding: 35px 185px 20px 10px;
+  }
+
+  .feature-card{
+    height: 200px;
+    border: 1px solid #D4D4D4;
+    border-radius: 10px;
+    margin-top: 6%;
+  }
+  
+  @media (max-width:1500px) {
+    .feature-card{
+      height: 230px !important;
+    }  
+  }
+  @media (max-width: 800px) {
+    .feature-card{
+      height: 250px !important;
+    }
+  }
+  
+
+  .feature-card .icon i{
+    float: left;
+    padding: 2rem;
+  }
+
+
+  .custom-hoverable {
+    -webkit-transition: -webkit-box-shadow .25s;
+    transition: -webkit-box-shadow .25s;
+    transition: box-shadow .25s;
+    transition: box-shadow .25s, -webkit-box-shadow .25s;
+  }
+  
+  .right-custom-hoverable:hover {
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px; */
+    box-shadow: #1989fa21 -5px 5px, #1b8afa23 -10px 10px, #1b8afa28 -15px 15px, #2e89f01a -20px 20px, #1b8afa00 -25px 25px;
+  }
+  .left-custom-hoverable:hover {
+    box-shadow: #1989fa21 5px 5px, #1b8afa23 10px 10px, #1b8afa28 15px 15px, #2e89f01a 20px 20px, #1b8afa00 25px 25px;
+  }
+
+
+  
+/* End of Feature Component Custom Style  */
+
+
+
+/* Integration Custom Styles  */
+
+  /* From uiverse.io by @alexmaracinaru */
+
+button{
+  cursor: pointer;
+  color: #234567;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  background: white !important;
+}
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+ }
+ 
+ .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #1b8afaa6;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+ }
+ 
+ .cta span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  /* color: #234567; */
+ }
+
+ .cta:hover{
+  color: white !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: white !important;
+ }
+ 
+ .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+ }
+ 
+ .cta:hover:before {
+  width: 100%;
+  background: #1B89FA;
+  /* color: white; */
+ }
+ 
+ .cta:hover svg {
+  transform: translateX(0);
+ }
+ 
+ .cta:active {
+  transform: scale(0.95);
+  color: white !important;
+ }
+
+
+ @media (max-width:1500px) {
+  .integration-adjust{
+    margin-top: 10% !important;
+    width: 110% !important;
+    margin-left: -20% !important;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .integration-adjust{
+    margin-top: 10% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+}
+ /* End of Integration Component Custom Style  */
+ 
+
+
+
+/* Testimonial Component Custom Style  */
+
+ .swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  font-size: 18px;
+  color: white;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+span.swiper-pagination-bullet-active{
+  background-color: #1B89FA !important;
+}
+
+span.swiper-pagination-bullet{
+  background-color: #ffffff;
+}
+
+/* End Testimonial Component Custom Style  */
+
+
+
+
+/* Download Ads Component Custom Style */
+
+@media (max-width:1500px) {
+  .download-adjust{
+    width: 125% !important;
+  }
+  .download-adjust-img{
+    margin-top: 10% !important;
+    width: 110% !important;
+    margin-left: 0% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .download-adjust{
+    width: 100% !important;
+  }
+  .download-adjust-img{
+    margin-top: 10% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+}
+
+/* Download Ads Component Custom Style */
+
+
+
+
+
+
+/* Subscription Component Custom Css Style  */
+
+.subscription-form-inline {  
+  display: flex !important;
+  flex-flow: row wrap !important;
+  align-items: center !important;
+}
+
+.subscription-form-inline input {
+  vertical-align: middle !important;
+  margin: 0 !important;
+  background-color: #fff !important;
+  /* border: 1px solid #ddd !important; */
+  outline: none !important;
+  width: 55% !important;
+  padding-left: 10px !important;
+  height: 36px !important;
+  border: none !important;
+
+}
+.subscription-form-inline button {
+  background: #1B89FA !important;
+  text-transform: none !important;
+  border-radius: 10px !important;
+  height: 44px !important;
+  margin-left: -9rem !important;
+}
+
+.subscription-form-inline input[type=email] {
+  outline: none !important;
+  border-radius: 10px !important;
+  padding: 15px !important;
+  padding-right: 60px !important;
+}
+
+.subscription-form-inline input[type=email]:focus {
+  border-radius: 10px !important;
+  outline: 1px solid #c4c4c4 !important;
+}
+
+@media (max-width: 800px) {
+  .subscription-form-inline input[type=email] {
+    margin: 10px 0 !important;
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+  .subscription-form-inline button {
+    background: #1B89FA !important;
+    text-transform: none !important;
+    border-radius: 10px !important;
+    height: 44px !important;
+    margin-left: 0rem !important;
+  }
+  
+  .subscription-form-inline {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+}
+
+
+.subscription-highlight-container, .highlight {
+  position: relative;
+  color: #ffffffe3 !important;
+}
+
+.subscription-highlight-container {
+  display: inline-block;
+}
+.subscription-highlight-container:before {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #1B89FA;
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 35px 238px 22px 12px;
+}
+
+@media (max-width:1500px) {
+  .subscription-adjust{
+    width: 130% !important;
+    margin-left: -10% !important;
+  }
+  .supscription-adjust-input{
+    margin-top: 1% !important;
+    width: 110% !important;
+    margin-left: 10% !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .subscription-adjust{
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+  .supscription-adjust-input{
+    margin-top: 0% !important;
+    width: 100% !important;
+    margin-left: 0% !important;
+  }
+}
+
+
+
+/*End Of Subscription Component Custom Css Style  */
