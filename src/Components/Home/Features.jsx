@@ -18,7 +18,7 @@ function Features() {
                         <div className="card-content">
                           <div className='icon'><i className='fa-solid fa-clipboard-list fa-3x text-blue'></i></div>
                           <h5 className='bolder'>Invoice Maker</h5>
-                          <p style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "6.2rem"}}>See whether your time-off schedule overlaps with a teammate while applying for a review a time-off request.</p>
+                          <p>See whether your time-off schedule overlaps with a teammate while applying for a review a time-off request.</p>
                         </div>
                       </div>
                     </div>
@@ -28,7 +28,7 @@ function Features() {
                       <div className="card-content">
                         <div className='icon'><i className='fa-solid fa-border-none fa-3x text-blue'></i></div>
                         <h5 className='bolder'>Widget Board</h5>
-                        <p style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "6.2rem"}}>Acces QuickBooks, Google Calender, Dropbox, Google Drive, OneDrive and Outlook all in one space.</p>
+                        <p>Acces QuickBooks, Google Calender, Dropbox, Google Drive, OneDrive and Outlook all in one space.</p>
                       </div>
                     </div>
                   </div>
@@ -38,7 +38,7 @@ function Features() {
                       <div className="card-content">
                         <div className='icon'><i className='fa-solid fa-message fa-3x text-blue'></i></div>
                         <h5 className='bolder'>Chat Panel</h5>
-                        <p style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "6.2rem"}}>Chat with the team or external partners. Dulge supports 1:1 messages or team messages</p>
+                        <p>Chat with the team or external partners. Dulge supports 1:1 messages or team messages</p>
                       </div>
                     </div>
                   </div>
@@ -51,7 +51,7 @@ function Features() {
                         <div className="card-content">
                         <div className='icon'><i className='fa-solid fa-file-circle-check fa-3x text-blue'></i></div>
                         <h5 className='bolder'>Integration</h5>
-                        <p  style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "7.5rem"}}>Seamlessly integrate Dulge with modern and trusted tools of your workflow like Dropbox, and more.</p>
+                        <p>Seamlessly integrate Dulge with modern and trusted tools of your workflow like Dropbox, and more.</p>
                         </div>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ function Features() {
                       <div className="card-content">
                         <div className='icon'><i className='fa-solid fa-arrows-rotate fa-3x text-blue'></i></div>
                         <h5 className='bolder'>Backups</h5>
-                        <p  style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "7rem"}}>A copy of a file or other item of data made  are saved in the cloud in case the original is lost or damaged. </p>
+                        <p>A copy of a file or other item of data made  are saved in the cloud in case the original is lost or damaged. </p>
                       </div>
                     </div>
                   </div>
@@ -71,7 +71,7 @@ function Features() {
                       <div className="card-content">
                         <div className='icon'><i className='fa-solid fa-list-check fa-3x text-blue'></i></div>
                         <h5 className='bolder'>Task Board</h5>
-                        <p  style={{fontSize: "1.1rem", lineHeight: "2rem", marginLeft: "7rem"}}>Break down any size projecr into customized tasks. </p>
+                        <p>Break down any size projecr into customized tasks. </p>
                         </div>
                     </div>
                   </div>    

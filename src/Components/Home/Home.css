@@ -182,7 +182,7 @@
   }
   @media (max-width: 800px) {
     .feature-card{
-      height: 250px !important;
+      height: 300px !important;
     }
   }
   
@@ -192,7 +192,28 @@
     padding: 2rem;
   }
 
+  .feature-card p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-left: 6.2rem;
+  }
 
+  @media (max-width: 800px) {
+  .feature-card h5, p{
+    text-align: center;
+  }
+  }
+
+
+  @media (max-width: 800px) {
+    .feature-card .icon i{
+      float:none !important;
+    padding: 1rem !important;
+    text-align: center !important;
+    display: block !important;
+    }
+  }
+  
   .custom-hoverable {
     -webkit-transition: -webkit-box-shadow .25s;
     transition: -webkit-box-shadow .25s;
