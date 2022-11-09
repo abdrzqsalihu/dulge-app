@@ -19,7 +19,7 @@ function Hero() {
                    </div>
                 </div>
                 <div className="col l7 m12 s12 push-l1">
-                    <img src={hero} alt="" className='responsive-img' />
+                    <img src={hero} alt="task-manager" className='responsive-img' />
                 </div>
             </div>
         </div>

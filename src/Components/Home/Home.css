@@ -40,7 +40,7 @@
     }
 }
 
-  @media (max-width: 800px) {
+  @media (max-width: 995px) {
     .form-inline input {
       margin: 10px 0 !important;
       width: 100% !important;
@@ -52,6 +52,7 @@
     }
     .intro{
       width: 100% !important;
+      margin-bottom: 10% !important;
     }
   }
 
