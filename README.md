@@ -1,5 +1,7 @@
 # Getting Started with Dulge-app
 
+Remember everything and tackle any project with your notes, tasks, and schedule all in one place.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
