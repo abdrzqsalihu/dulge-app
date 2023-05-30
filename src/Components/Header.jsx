@@ -26,15 +26,15 @@ function Header() {
             
             <Sidebar/>
             
-            <div class="row hide-on-med-and-down">
+            <div className="row hide-on-med-and-down">
 
-                <div class="col l2 s12 m4 push-l2">
-                    <div class="site-logo">
+                <div className="col l2 s12 m4 push-l2">
+                    <div className="site-logo">
                         <Link to="/"><img src={Logo} className="logo" alt="" />dulge</Link>
                     </div>
                 </div>
 
-                <div class="col l5 s12 m4 center push-l2">
+                <div className="col l5 s12 m4 center push-l2">
                     <ul>
                         <li><Link to="/about" style={link_color} >Product</Link></li>
                         <li><Link to="/" style={link_color} >Solution</Link></li>
@@ -43,7 +43,7 @@ function Header() {
                     </ul>
                 </div>
 
-                <div class="col l4 m3 s12 push-l1">
+                <div className="col l4 m3 s12 push-l1">
                     <ul>
                         <li>
                             {user?.displayName ? ( <Link to="/Dashboard" className="btn login_btn z-depth-0 panel_btn" style={{border: "none !important"}}>Panel</Link> ) : ( <Link to="/signin"  className="btn login_btn z-depth-0">Log In</Link>)}

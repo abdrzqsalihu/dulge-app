@@ -10,6 +10,10 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
+// Import Slider Profiles 
+import profile1 from '../../assets/img/profile_1.png'
+import profile2 from '../../assets/img/profile_2.png'
+
 
 function Testimonials() {
 
@@ -20,7 +24,7 @@ function Testimonials() {
         <section className="bg-black"><br /><br />
             <div className="container">
             <div className="center white-text">
-                <h3 className='bolder' style={{lineHeight: "3.5rem"}}><span class="feature-highlight-container"><span class="highlight">Trusted by</span></span> 300k+ customer. </h3><br />
+                <h3 className='bolder' style={{lineHeight: "3.5rem"}}><span className="feature-highlight-container"><span className="highlight">Trusted by</span></span> 300k+ customer. </h3><br />
                 <p className='width-full' style={{width: "60%", margin: "auto", fontSize: "1.1rem"}}>Dulge Project Management helps you stay in full control of all your projects and keeps track of all the moving parts.</p>
             </div> <br /><br /><br /><br />
 
@@ -29,10 +33,10 @@ function Testimonials() {
                     <SwiperSlide>
                         <div className="row">
                             <div className="col l5 m6 s12 push-l2"><br />
-                                <img src={require("../../assets/img/11.png")}  style={{borderRadius: "50%", width: "55%"}} alt="" />
+                                <img src={profile2}  style={{borderRadius: "50%", width: "55%"}} alt="" />
                             </div>
                             <div className="col l5 m6 s12 push-l1">
-                            <i class="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
+                            <i className="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
                             
                                 <p style={{fontSize: "1.2rem", lineHeight: "2.4rem"}}>"I'm now able to organize hundreds of links across 15 different affiliate programs and easily re-use them across my site. Best of all, the displays are beautiful and eye-catching, showing my readers exactly what to click and buy."</p>
                                 <br /> 
@@ -46,10 +50,10 @@ function Testimonials() {
                     <SwiperSlide>
                         <div className="row">
                             <div className="col l5 m6 s12 push-l2"><br />
-                                <img src={require("../../assets/img/1.png")}  style={{borderRadius: "50%", width: "55%"}} alt="" />
+                                <img src={profile1}  style={{borderRadius: "50%", width: "55%"}} alt="" />
                             </div>
                             <div className="col l5 m6 s12 push-l1">
-                            <i class="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
+                            <i className="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
                             
                                 <p style={{fontSize: "1.2rem", lineHeight: "2.4rem"}}>"I'm now able to organize hundreds of links across 15 different affiliate programs and easily re-use them across my site. Best of all, the displays are beautiful and eye-catching, showing my readers exactly what to click and buy."</p>
                                 <br /> 
@@ -62,10 +66,10 @@ function Testimonials() {
                     <SwiperSlide>
                         <div className="row">
                             <div className="col l5 m6 s12 push-l2"><br />
-                                <img src={require("../../assets/img/11.png")}  style={{borderRadius: "50%", width: "55%"}} alt="" />
+                                <img src={profile2}  style={{borderRadius: "50%", width: "55%"}} alt="" />
                             </div>
                             <div className="col l5 m6 s12 push-l1">
-                            <i class="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
+                            <i className="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
                             
                                 <p style={{fontSize: "1.2rem", lineHeight: "2.4rem"}}>"I'm now able to organize hundreds of links across 15 different affiliate programs and easily re-use them across my site. Best of all, the displays are beautiful and eye-catching, showing my readers exactly what to click and buy."</p>
                                 <br /> 
@@ -78,10 +82,10 @@ function Testimonials() {
                     <SwiperSlide>
                         <div className="row">
                             <div className="col l5 m6 s12 push-l2"><br />
-                                <img src={require("../../assets/img/1.png")}  style={{borderRadius: "50%", width: "55%"}} alt="" />
+                                <img src={profile1}  style={{borderRadius: "50%", width: "55%"}} alt="" />
                             </div>
                             <div className="col l5 m6 s12 push-l1">
-                            <i class="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
+                            <i className="fa-solid fa-quote-right bg-blue white-text fa-2x" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
                             
                                 <p style={{fontSize: "1.2rem", lineHeight: "2.4rem"}}>"I'm now able to organize hundreds of links across 15 different affiliate programs and easily re-use them across my site. Best of all, the displays are beautiful and eye-catching, showing my readers exactly what to click and buy."</p>
                                 <br /> 

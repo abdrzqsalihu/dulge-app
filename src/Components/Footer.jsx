@@ -10,7 +10,7 @@ function Footer() {
                 <div className="footer">
                     <div className="row">
                         <div className="col s12 m12 l4">
-                            <div class="site-logo">
+                            <div className="site-logo">
                                 <Link to="/"><img src={Logo} className="footer-logo" alt="" /> <span> dulge</span></Link>
                             </div>
 
@@ -80,13 +80,13 @@ function Footer() {
                <hr />
                <div className="row">
                     <div className="col l5 m6 s12">
-                    <p className="text-black" style={{fontWeight:"bold", fontSize:"1.1rem"}}> <i class="fa-regular fa-copyright"></i> {(new Date().getFullYear())} by Darsh. All Rights Reserved</p>
+                    <p className="text-black" style={{fontWeight:"bold", fontSize:"1.1rem"}}> <i className="fa-regular fa-copyright"></i> {(new Date().getFullYear())} by Darsh. All Rights Reserved</p>
                     </div>
                     <div className="col l4 m4 s12 push-l5 push-m3">
                     <ul>
                           
                            <li>
-                               <a href="#!"><i class="fa fa-facebook footer-icon"></i></a>
+                               <a href="#!"><i className="fa fa-facebook footer-icon"></i></a>
                                <a href="#!"><i className="fa fa-instagram footer-icon"></i></a>
                                <a href="#!"><i className="fa fa-twitter footer-icon"></i></a>
                                <a href="#!"><i className="fa fa-whatsapp footer-icon"></i></a>
