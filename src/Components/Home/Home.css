@@ -89,6 +89,63 @@
     padding: 37px 190px 27px 50px;
   }
   
+  /* Hero Section Dashboard Button Style */
+
+  .dashboard_cta {
+    border: none;
+    background: none;
+    cursor:pointer;
+  }
+  
+  .dashboard_cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .dashboard_cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+    color: #1B89FA;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .dashboard_cta:active svg {
+    transform: scale(0.9);
+  }
+  
+  .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #1B89FA;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .dashboard_cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
   /* /* End of Hero Component Custom Style  * */
 
 
