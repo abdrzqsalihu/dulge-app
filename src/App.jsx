@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "swiper/css/bundle";
 import './App.css';
 import '../node_modules/materialize-css/dist/css/materialize.css';
@@ -12,11 +12,14 @@ import Dashboard from "./Components/Dashboard";
 import Protected from "./Components/Protected";
 
 function App() {
+  const location = useLocation();
+
+  const SignInPage = location.pathname === '/signin';
   return (
     <div className='App'>
-
       <AuthContextProvider>
-        <Header/>
+      {SignInPage ? null : <Header />}
+        {/* <Header/> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
