@@ -9,7 +9,7 @@ function Subscription() {
                     <div className="col l6 m6 s12">
                       <div className='subscription-adjust'>
                       <h3 className='bolder' style={{lineHeight: "3.5rem"}}><span className="subscription-highlight-container"><span className="highlight" style={{paddingRight:"15px"}}>Get started </span></span> with us today.</h3>
-                      <p  style={{fontSize: "1.1rem", lineHeight: "2.1rem"}} className="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet laudantium rem reprehenderit tempora a quis, magni ipsam adipisci. Sequi?</p>
+                      <p  style={{fontSize: "1.1rem", lineHeight: "2.1rem", textAlign:"left"}} className="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident eveniet laudantium rem reprehenderit tempora a quis, magni ipsam adipisci. Sequi?</p>
                       </div>
                     <br />
                     </div>

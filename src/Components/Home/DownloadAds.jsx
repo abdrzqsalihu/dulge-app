@@ -13,7 +13,7 @@ function DownloadAds() {
               <div className='download-adjust'>
               <i className="fa-solid fa-mobile-screen bg-blue white-text" style={{padding: "12px", borderRadius: "50%", fontSize: "22px"}}></i>
                 <h3 className='bolder'> Project <span className="highlight-containers text-blue"><span className="highlights">Management </span></span> is mobile friendly!</h3>
-                <p style={{fontSize: "1.1rem", lineHeight: "2rem"}}>Stay connected with your team with Dulge for IOS and Android. Have access to all integrations and extensions for desktop,browser.</p>
+                <p style={{fontSize: "1.1rem", lineHeight: "2rem", textAlign:"left"}}>Stay connected with your team with Dulge for IOS and Android. Have access to all integrations and extensions for desktop,browser.</p>
                 <div className="col l6 m6 s6">
                     <a href="#!"> <img src={appleStoreBtn}  style={{width: "80%"}} alt="" /></a>
                 </div>
