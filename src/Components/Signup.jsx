@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { GoogleButton } from 'react-google-button';
 import {UserAuth} from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
+import Logo from '../assets/img/logo.png';
 
 function Signup() {
   const { googleSignIn, user } = UserAuth();
@@ -72,6 +73,10 @@ function Signup() {
           </div>
           
           <div className="login_image hide-on-small-and-down"></div>
+          {/* Logo  */}
+          <div className="site-logo" style={{ position: "absolute", top: "0px", left: "10px", width: "20rem", height: "50px" }}>
+            <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{marginTop:"18px"}}>Dulge</p></Link>
+          </div>
       </div>
 
 

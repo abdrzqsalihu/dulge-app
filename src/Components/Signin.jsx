@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { GoogleButton } from 'react-google-button';
 import {UserAuth} from '../context/AuthContext';
 import {useNavigate, Link } from 'react-router-dom';
+import Logo from '../assets/img/logo.png';
 
 function Signin() {
   const { googleSignIn, user } = UserAuth();
@@ -28,6 +29,7 @@ function Signin() {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
       <div className="login_container"> 
           <div className="login_form-container">
+            
             <div className="login_form">
               <div>
                   <h2 className='bolder'>Welcome back!</h2>
@@ -70,6 +72,10 @@ function Signin() {
           </div>
           
           <div className="login_image hide-on-small-and-down"></div>
+          {/* Logo  */}
+          <div className="site-logo" style={{ position: "absolute", top: "0px", left: "10px", width: "20rem", height: "50px" }}>
+            <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{marginTop:"18px"}}>Dulge</p></Link>
+          </div>
       </div>
 
 
