@@ -30,7 +30,10 @@ function Header() {
 
                 <div className="col l2 s12 m4 push-l2">
                     <div className="site-logo">
-                        <Link to="/" className="logo-text"><img src={Logo} className="logo" alt="" />dulge</Link>
+                        {/* <Link to="/"><img src={Logo} className="logo" alt="" />Dulge</Link> */}
+                        <div style={{ position: "absolute", top: "0px", left: "10px", width: "20rem", height: "50px" }}>
+                            <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{position: "absolute", marginTop:"6px", marginLeft:"45px", fontWeight:"bold", fontSize:"22px"}}>Dulge</p></Link>
+                        </div> 
                     </div>
                 </div>
 

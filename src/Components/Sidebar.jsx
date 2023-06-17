@@ -35,7 +35,10 @@ function Sidebar() {
         </a>
       </div>
         <div className="site-logo-sm col s6 pull-s2">
-            <Link to="/" className="logo-text"><img src={Logo} className="logo" alt="" />dulge</Link>
+            <div style={{ position: "absolute", top: "0px", left: "10px", width: "15rem", height: "50px" }}>
+                <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{position: "absolute", marginTop:"6px", marginLeft:"45px", fontWeight:"bold", fontSize:"22px"}}>Dulge</p></Link>
+            </div>    
+            {/* <Link to="/" className="logo-text" style={{fontWeight:"300"}}><img src={Logo} className="logo" alt="" />dulge</Link> */}
         </div>
        </div>
         

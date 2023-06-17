@@ -75,7 +75,7 @@ function Signup() {
           <div className="login_image hide-on-small-and-down"></div>
           {/* Logo  */}
           <div className="site-logo" style={{ position: "absolute", top: "0px", left: "10px", width: "20rem", height: "50px" }}>
-            <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{position: "absolute", marginTop:"18px", marginLeft:"45px", fontWeight:"bold"}}>Dulge</p></Link>
+            <Link to="/" style={{textDecoration:"none"}}><img src={Logo} className="logo" alt="" /> <p style={{position: "absolute", marginTop:"21px", marginLeft:"45px", fontWeight:"bold", fontSize:"20px"}}>Dulge</p></Link>
           </div>
       </div>
 
