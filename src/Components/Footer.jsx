@@ -80,7 +80,8 @@ function Footer() {
                <hr />
                <div className="row">
                     <div className="col l5 m6 s12">
-                    <p className="text-black" style={{fontWeight:"bold", fontSize:"1.1rem"}}> <i className="fa-regular fa-copyright"></i> {(new Date().getFullYear())} by Darsh. All Rights Reserved</p>
+                    <p className="text-black" style={{fontWeight:"bold", fontSize:"1.1rem"}}> <i className="fa-regular fa-copyright"></i> {(new Date().getFullYear())} Dulge. Built by 
+                    <a href="https://abdrzqsalihu.vercel.app/" target="_blank" className="text-black" style={{textDecoration:"underline"}}> Abdulrazaq Salihu</a></p>
                     </div>
                     <div className="col l4 m4 s12 push-l5 push-m3">
                     <ul>
