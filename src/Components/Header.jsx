@@ -50,7 +50,7 @@ function Header() {
                            
                         </li>
                         <li>
-                        {user?.displayName ? ( <button className="btn start_btn z-depth-0" onClick={handleSignOut}>Logout</button> ) : (  <Link to="/"  className="btn start_btn z-depth-0">Start for Free</Link>)}
+                        {user?.displayName ? ( <button className="btn start_btn z-depth-0" onClick={handleSignOut}>Logout</button> ) : (  <Link to="/signup"  className="btn start_btn z-depth-0">Start for Free</Link>)}
                            </li>   
                     </ul>
                 </div>
