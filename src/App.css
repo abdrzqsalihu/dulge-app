@@ -92,13 +92,13 @@ ul li a:hover{
   margin-top: 12px !important;
   color: #1f1f1f !important;
 }
-.site-logo a{
+.site-logo .logo-text{
   color: #1f1f1f !important;
   font-weight: 600 !important;
   font-size: 24px !important;
   font-family: monospace !important;
 }
-.site-logo-sm a{
+.site-logo-sm .logo-text{
   color: #1f1f1f !important;
   font-weight: 600 !important;
   font-size: 23px !important;

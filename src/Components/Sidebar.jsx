@@ -35,7 +35,7 @@ function Sidebar() {
         </a>
       </div>
         <div className="site-logo-sm col s6 pull-s2">
-            <Link to="/"><img src={Logo} className="logo" alt="" />dulge</Link>
+            <Link to="/" className="logo-text"><img src={Logo} className="logo" alt="" />dulge</Link>
         </div>
        </div>
         
