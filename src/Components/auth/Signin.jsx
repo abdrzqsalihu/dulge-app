@@ -106,12 +106,12 @@ function Signin() {
               <form onSubmit={handleSignIn}> <br />
                 {/* <h2>Login</h2> */}
                 <div className="input-container">
-                  <input placeholder="Email" className="input-field" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input placeholder="Email" className="input-field" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                   <span className="input-highlight"></span>
                 </div>
           
                 <div className="input-container">
-                  <input placeholder="Password" className="input-field" type="password"  value={password} onChange={(e) => setPassword(e.target.value)} />
+                  <input placeholder="Password" className="input-field" type="password" required value={password} onChange={(e) => setPassword(e.target.value)} />
                   <span className="input-highlight"></span>
                 </div>
                 <div className="row" style={{marginTop: "15px"}}>
