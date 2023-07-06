@@ -294,7 +294,7 @@ img.footer-logo{
 
 /* Hide the default checkbox */
 .checkbox-container input {
-  display: none !important;
+  /* display: none !important; */
 }
 
 .checkbox-container {
