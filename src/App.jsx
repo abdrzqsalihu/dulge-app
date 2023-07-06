@@ -7,8 +7,8 @@ import { AuthContextProvider } from "./context/AuthContext";
 import Header from './Components/Header';
 import Home from './Components/Home';
 import About from "./Components/About";
-import Signin from "./Components/Signin";
-import Signup from "./Components/Signup";
+import Signin from "./Components/auth/Signin";
+import Signup from "./Components/auth/Signup";
 import Dashboard from "./Components/Dashboard";
 import Protected from "./Components/Protected";
 
