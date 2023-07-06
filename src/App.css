@@ -176,13 +176,24 @@ img.footer-logo{
   align-items: center;
   justify-content: center;
   /* background-color: #f1f1f1; */
+  /* width: 80% !important; */
 }
 
 .login_form {
-  width: 360px;
+  width: 350px;
+  /* width: 100% !important; */
   /* padding: 60px; */
   /* background-color: #fff; */
 }
+
+@media only screen and (max-width: 767px) {
+  /* CSS code for small screens */
+  .login_form {
+    /* width: 200px !important; */
+    width: 90% !important;
+  }
+}
+
 
 .signin_btn{
   width: 100%;

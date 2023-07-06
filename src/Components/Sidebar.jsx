@@ -48,8 +48,8 @@ function Sidebar() {
             <li><Link to="/" style={link_color} >Solution</Link></li>
             <li><Link to="/" style={link_color} >Pricing</Link></li>
             <li><Link to="/" style={link_color} >Resources</Link></li>   
-            <li>{user?.displayName ? ( <Link to="/Dashboard" className="btn login_btn z-depth-0 panel_btn" style={{border: "none !important"}}>Panel</Link> ) : ( <Link to="/signin"  className="btn login_btn z-depth-0">Log In</Link>)}</li>
-            <li>{user?.displayName ? ( <a className="btn start_btn z-depth-0" onClick={handleSignOut}>Logout</a> ) : (  <Link to="/signup"  className="btn start_btn z-depth-0">Start for Free</Link>)}</li>   
+            <li>{user?.email ? ( <Link to="/Dashboard" className="btn login_btn z-depth-0 panel_btn" style={{border: "none !important"}}>Panel</Link> ) : ( <Link to="/signin"  className="btn login_btn z-depth-0">Log In</Link>)}</li>
+            <li>{user?.email ? ( <a className="btn start_btn z-depth-0" onClick={handleSignOut}>Logout</a> ) : (  <Link to="/signup"  className="btn start_btn z-depth-0">Start for Free</Link>)}</li>   
         </ul>
    
   </div>

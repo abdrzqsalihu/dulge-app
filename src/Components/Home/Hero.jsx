@@ -24,7 +24,7 @@ function Hero() {
                     <p style={{textAlign:"left"}}>Remember everything and tackle any project with your notes, tasks, and schedule all in one place.</p>
                    <div className='boxshadow'>
                     <form className="form-inline" action="">
-                    {user?.displayName ? (
+                    {user?.email ? (
                          <>
                          <Link to="/Dashboard" className="dashboard_cta">
                             <span className="hover-underline-animation"> Dashboard </span><svg fill="#1B89FA" viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal"><path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10">
