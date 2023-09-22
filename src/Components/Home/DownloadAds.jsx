@@ -1,7 +1,7 @@
 import React from 'react'
 import mobileimg from '../../assets/img/undraw_mobile_posts_re_bpuw.svg'
 import googlePlayBtn from '../../assets/img/Google Play.png'
-import appleStoreBtn from '../../assets/img/Google Play.png'
+import appleStoreBtn from '../../assets/img/App Store.png'
 
 
 function DownloadAds() {
