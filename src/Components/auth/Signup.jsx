@@ -101,10 +101,10 @@ function Signup() {
 
               <form onSubmit={handleSignUp}> <br />
                 {/* <h2>Login</h2> */}
-                <div className="input-container">
+                {/* <div className="input-container">
                   <input placeholder="Name" className="input-field" type="text" />
                   <span className="input-highlight"></span>
-                </div>
+                </div> */}
 
                 <div className="input-container">
                   <input placeholder="Email" className="input-field" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
