@@ -1,7 +1,7 @@
 import { useContext, createContext, useEffect, useState } from "react";
 import {
      GoogleAuthProvider, 
-    //  signInWithPopup,
+     signInWithPopup,
      signInWithRedirect,
      signOut,
      onAuthStateChanged
@@ -18,8 +18,8 @@ export const AuthContextProvider = ({children}) => {
 
     const googleSignIn = () => {
         const provider = new GoogleAuthProvider();
-        // signInWithPopup(auth, provider);
-        signInWithRedirect(auth, provider)
+        signInWithPopup(auth, provider);
+        // signInWithRedirect(auth, provider)
     };
 
     const logOut = () => {
@@ -29,7 +29,7 @@ export const AuthContextProvider = ({children}) => {
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
-            console.log('User', currentUser);
+            // console.log('User', currentUser);
         });
         return () => {
             unsubscribe();

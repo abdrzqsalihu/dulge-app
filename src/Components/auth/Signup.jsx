@@ -85,7 +85,7 @@ function Signup() {
           <div className="login_form-container">
             <div className="login_form">
               <div>
-                  <h2 className='bolder'>Create an account!</h2>
+                  <h2 className='bolder' style={{fontSize: "28px"}}>Create an account!</h2>
                   <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign up to Unlock the power of task management.</p> 
                     {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
                     {errorMessage && (
@@ -101,10 +101,10 @@ function Signup() {
 
               <form onSubmit={handleSignUp}> <br />
                 {/* <h2>Login</h2> */}
-                <div className="input-container">
+                {/* <div className="input-container">
                   <input placeholder="Name" className="input-field" type="text" />
                   <span className="input-highlight"></span>
-                </div>
+                </div> */}
 
                 <div className="input-container">
                   <input placeholder="Email" className="input-field" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />

@@ -89,7 +89,7 @@ function Signin() {
             
             <div className="login_form">
               <div>
-                  <h2 className='bolder'>Welcome back!</h2>
+                  <h2 className='bolder' style={{fontSize: "28px"}}>Welcome back!</h2>
                   <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign in with your details</p> 
                   {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
                     {errorMessage && (
