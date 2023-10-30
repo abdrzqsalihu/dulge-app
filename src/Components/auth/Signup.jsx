@@ -85,7 +85,7 @@ function Signup() {
           <div className="login_form-container">
             <div className="login_form">
               <div>
-                  <h2 className='bolder'>Create an account!</h2>
+                  <h2 className='bolder' style={{fontSize: "28px"}}>Create an account!</h2>
                   <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign up to Unlock the power of task management.</p> 
                     {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
                     {errorMessage && (
