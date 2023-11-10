@@ -20,7 +20,7 @@ function Dashboard() {
     <div>
         <div className='container center'><br />
             <h4>Dashboard</h4>
-            <p>Welcome, {user?.displayName}</p>
+            <p>{user?.displayName && <p>Welcome, {user.displayName}</p>}</p>
             <p>Welcome, {user?.email}</p>
             {/* <button onClick={handleSignOut}>Log Out</button> */}
         </div>

@@ -2,13 +2,16 @@ import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useEffect, useState } from 'react'
 import { GoogleButton } from 'react-google-button';
 import { UserAuth } from '../../context/AuthContext';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import Logo from '../../assets/img/logo.png';
 import { auth } from '../../firebase';
 
 function Signup() {
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const userEmail = searchParams.get('email');
 
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState(userEmail || '');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -85,6 +88,7 @@ function Signup() {
           <div className="login_form-container">
             <div className="login_form">
               <div>
+                {/* <p>{defaultEmail}</p> */}
                   <h2 className='bolder' style={{fontSize: "28px"}}>Create an account!</h2>
                   <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign up to Unlock the power of task management.</p> 
                     {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
@@ -107,7 +111,7 @@ function Signup() {
                 </div> */}
 
                 <div className="input-container">
-                  <input placeholder="Email" className="input-field" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+                  <input placeholder="Email" className="input-field" type="email" required  value={userEmail || email} onChange={(e) => setEmail(e.target.value)} />
                   <span className="input-highlight"></span>
                 </div>
           
