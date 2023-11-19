@@ -1,10 +1,12 @@
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import React, { useEffect, useState } from 'react'
 import { GoogleButton } from 'react-google-button';
-import { UserAuth } from '../../context/AuthContext';
+// import { UserAuth } from '../../../context/AuthContext';
+import { UserAuth } from '../../src/context/AuthContext';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
-import Logo from '../../assets/img/logo.png';
-import { auth } from '../../firebase';
+// import Logo from '../../assets/img/logo.png';
+import Logo from '../../src/assets/img/logo.png'
+import { auth } from '../../src/firebase';
 
 function Signup() {
   const location = useLocation();
