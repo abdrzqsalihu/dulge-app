@@ -248,12 +248,14 @@
   .feature-card .icon i{
     float: left;
     padding: 2rem;
+    display: flex;
   }
 
   .feature-card p{
     font-size: 1.1rem;
     line-height: 2rem;
     margin-left: 6.2rem;
+    display: flex;
   }
 
   @media (max-width: 800px) {
