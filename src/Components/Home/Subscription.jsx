@@ -5,7 +5,7 @@ function Subscription() {
     <div className='subscription'><br /><br />
       <section className='bg-black'><br /><br />
             <div className="container white-text">
-                <div className="row" style={{ }}>
+                <div className="row">
                     <div className="col l6 m6 s12">
                       <div className='subscription-adjust'>
                       <h3 className='bolder' style={{lineHeight: "3.5rem"}}><span className="subscription-highlight-container"><span className="highlight" style={{paddingRight:"15px"}}>Get started </span></span> with us today.</h3>
