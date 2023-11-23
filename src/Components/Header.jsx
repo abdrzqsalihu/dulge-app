@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from 'react'
 import Logo from '../assets/img/logo.png';
-import Sidebar from './Sidebar';
+import Sidenav from './Sidenav';
 import {UserAuth} from '../context/AuthContext'
 
 function Header() {
@@ -24,7 +24,7 @@ function Header() {
     <div className='header'>
         <nav className='z-depth-0 transparent'>
             
-            <Sidebar/>
+            <Sidenav/>
             
             <div className="row hide-on-med-and-down">
 
