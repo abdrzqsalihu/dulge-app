@@ -1,19 +1,16 @@
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, AuthErrorCodes  } from 'firebase/auth';
 import React, { useEffect, useState } from 'react'
-import { GoogleButton } from 'react-google-button';
-// import { UserAuth } from '../../../context/AuthContext';
-import { UserAuth } from '../../src/context/AuthContext';
-import { useNavigate, Link, useLocation } from 'react-router-dom';
-// import Logo from '../../assets/img/logo.png';
-import Logo from '../../src/assets/img/logo.png'
-import { auth } from '../../src/firebase';
+// import { GoogleButton } from 'react-google-button';
+import { UserAuth } from '../../context/AuthContext';
+import { useNavigate, Link } from 'react-router-dom';
+import Logo from '../../assets/img/logo.png'
+// import { auth } from '../../src/firebase';
+import { auth } from '../../firebase';
 
-function Signup() {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const userEmail = searchParams.get('email');
 
-  const [email, setEmail] = useState(userEmail || '');
+function Signin() {
+
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -30,9 +27,9 @@ function Signup() {
     }
   }
 
-  const handleSignUp = async (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       console.log(userCredential);
     }).catch((error) => {
@@ -42,6 +39,7 @@ function Signup() {
     });
   };
 
+
   useEffect(() => {
     if (user != null) {
         navigate('/Dashboard');
@@ -49,6 +47,7 @@ function Signup() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[user]);
 
+  
   useEffect(() => {
     // Add event listener to capture errors from the console
     const handleError = (event) => {
@@ -65,12 +64,12 @@ function Signup() {
 
   const getErrorMessage = (errorCode) => {
     let errorMessage = '';
-    if (errorCode === 'auth/email-already-in-use') {
+    if (errorCode === 'auth/user-not-found') {
       // Handle user not found error
-      errorMessage = 'Email Already in Use.';
-    } else if (errorCode === 'auth/weak-password') {
+      errorMessage = 'User not found. Please sign up for a new account.';
+    } else if (errorCode === 'auth/wrong-password') {
       // Handle wrong password error
-      errorMessage = 'Password should be at least 6 characters';
+      errorMessage = 'Incorrect password!';
     } else if (errorCode === 'auth/invalid-api-key') {
       // Handle invalid API key error
       errorMessage = 'Invalid API key. Please contact support for assistance.';
@@ -88,32 +87,27 @@ function Signup() {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
       <div className="login_container"> 
           <div className="login_form-container">
+            
             <div className="login_form">
               <div>
-                {/* <p>{defaultEmail}</p> */}
-                  <h2 className='bolder' style={{fontSize: "28px"}}>Create an account!</h2>
-                  <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign up to Unlock the power of task management.</p> 
-                    {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
+                  <h2 className='bolder' style={{fontSize: "28px"}}>Welcome back!</h2>
+                  <p style={{color: "#696969", marginBottom: "25px", textAlign:"left"}}>Sign in with your details</p> 
+                  {/* {errorMessage && <p>Error: {errorMessage}</p>} */}
                     {errorMessage && (
                       <div className="error-message">
                         <p style={{color: "red", textAlign:"left", marginTop:"-12px", fontWeight:"bold"}}>{errorMessage}</p>
                       </div>
                     )}
-                  <button onClick={handleGoogleSignIn} type="submit" className="google_signin_btn"> <img width="28" height="28" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/> Sign up with Google</button>  <br /><br />
+                  <button onClick={handleGoogleSignIn} type="submit" className="google_signin_btn"> <img width="28" height="28" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/> Log in with Google</button>  <br /><br />
                   <div className="text-with-lines">
                     <div className="line"></div><div className="line-text">or</div><div className="line"></div>
                   </div>
               </div>
 
-              <form onSubmit={handleSignUp}> <br />
+              <form onSubmit={handleSignIn}> <br />
                 {/* <h2>Login</h2> */}
-                {/* <div className="input-container">
-                  <input placeholder="Name" className="input-field" type="text" />
-                  <span className="input-highlight"></span>
-                </div> */}
-
                 <div className="input-container">
-                  <input placeholder="Email" className="input-field" type="email" required  value={userEmail || email} onChange={(e) => setEmail(e.target.value)} />
+                  <input placeholder="Email" className="input-field" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} />
                   <span className="input-highlight"></span>
                 </div>
           
@@ -124,16 +118,19 @@ function Signup() {
                 <div className="row" style={{marginTop: "15px"}}>
                   <div className="col">   
                   <label className="checkbox-container">
-                    <input type="checkbox" required /><div className="checkmark"></div><span className="checkbox-label">I agree to the <a href="" style={{color: "#696969", fontWeight:"bold", textDecoration:"underline"}}>Terms & Conditions</a></span> 
+                    <input type="checkbox" /><div className="checkmark"></div><span className="checkbox-label">Remember for 30 days</span> 
                   </label>
+                  </div>
+                  <div className="col text-right">
+                    <a href="#" style={{fontSize: "13px", color: "#1B89FA", textDecoration: "underline", fontWeight: "bold"}}>Forgot Password</a>
                   </div>
                 </div>
 
                  <br />
-                  <button type="submit" className="signin_btn">Create account</button>
+                  <button type="submit" className="signin_btn">Log in</button>
               </form>
                   <div className='text-center' style={{fontSize:"14px"}}><br />
-                  <p style={{color: "#696969"}}>Already have an account? <Link to="/signin" style={{textDecoration: "underline", color: "#1B89FA", fontWeight: "bold"}}> Sign in</Link></p>
+                  <p style={{color: "#696969"}}>Don't have an account? <Link to="/signup" style={{textDecoration: "underline", color: "#1B89FA", fontWeight: "bold"}}> Sign up for free</Link></p>
                   </div>
             </div>
           </div>
@@ -159,4 +156,4 @@ function Signup() {
   )
 }
 
-export default Signup
+export default Signin

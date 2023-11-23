@@ -27,16 +27,22 @@
   background-color: #1B89FA !important;
 }
 
+.bg-black{
+  background-color: #050B1C !important;
+}
+
 .text-blue{
   color: #1B89FA !important;
 }
+
 .text-black{
   color: #1f1f1f !important;
 }
 
-.bg-black{
-    background-color: #050B1C !important;
+.text-dark-blue{
+  color: #050B1C !important;
 }
+
 
 .center-content{
   margin: auto !important;
@@ -354,4 +360,117 @@ img.footer-logo{
   margin-left: 3px;
   font-size: 13px;
   color: #AB9EAB;
+}
+
+
+/* Dashboard Styles  */
+.dashboard-btn{
+border: none !important;
+background-color: transparent !important;
+color: #fff;
+font-weight: 600;
+}
+
+/* Dashboard.css */
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  
+}
+
+.custom-sidebar {
+  width: 250px;
+  /* background-color: #333; */
+  color: white;
+  padding-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000; /* Ensure the sidebar is above other dashboard-content */
+}
+
+.custom-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.custom-sidebar li {
+  padding: 10px;
+}
+
+.custom-sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  /* padding: 20px; */
+  transition: transform 0.3s ease-in-out;
+  margin-left: 0;
+}
+
+/* .dashboard-container.sidebar-open .custom-sidebar {
+  transform: translateX(0);
+}
+
+.dashboard-container.sidebar-open .dashboard-content {
+  transform: translateX(0);
+} */
+
+
+.toggle-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 12px;
+  z-index: 1200;
+  display: none; 
+  /* background: red; */
+  border: none;
+  font-size: 1.8rem;
+  /* display: flex; */
+  /* align-items: center; */
+  /* height: 40px; */
+}
+
+.toggle-nav-div{
+  /* margin-top: 10px; */
+  /* position: relative; */
+  /* border: none; */
+  /* top: 10px; */
+}
+
+/* Show toggle button on small screens */
+@media (max-width: 768px) {
+  .custom-sidebar {
+    transform: translateX(-250px);
+  }
+  
+
+  .sidebar-open .custom-sidebar {
+    transform: translateX(0);
+  }
+
+  .sidebar-open .dashboard-content {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+}
+
+/* Adjust styles for screens larger than 768px if needed */
+@media (min-width: 1024px) {
+  .toggle-btn {
+    display: none;
+  }
+  .dashboard-content {
+      margin-left: 240px;
+    }
 }
