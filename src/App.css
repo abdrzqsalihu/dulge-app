@@ -426,13 +426,13 @@ font-weight: 600;
 .toggle-btn {
   position: absolute;
   cursor: pointer;
-  top: 10px;
-  left: 12px;
+  top: 12px;
+  left: 15px;
   z-index: 1200;
   display: none; 
   /* background: red; */
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   /* display: flex; */
   /* align-items: center; */
   /* height: 40px; */
