@@ -11,8 +11,11 @@ import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import Dashboard from "./pages/Dashboard";
 import Protected from "./pages/auth/Protected.jsx";
-import Sidebar from "./Components/Sidebar.jsx";
+// import Sidebar from "./Components/Sidebar.jsx";
 import Kanban from "./pages/Kanban.jsx";
+import Todos from "./pages/Todos.jsx"
+import Notes from "./pages/Notes.jsx"
+import Statistics from "./pages/Statistics.jsx"
 
 function App() {
   const location = useLocation();
@@ -23,7 +26,13 @@ function App() {
     location.pathname === "/Dashboard" ||
     location.pathname === "/dashboard" ||
     location.pathname === "/Kanban" ||
-    location.pathname === "/kanban";
+    location.pathname === "/kanban" ||
+    location.pathname === "/Todos" ||
+    location.pathname === "/todos" ||
+    location.pathname === "/Notes" ||
+    location.pathname === "/notes" ||
+    location.pathname === "/Statistics" ||
+    location.pathname === "/statistics";
 
   const ProtectedRoute = ({ element: Element }) => (
     <Protected>
@@ -49,6 +58,18 @@ function App() {
             <Route
               path="/kanban"
               element={<ProtectedRoute element={Kanban} />}
+            />
+            <Route
+              path="/todos"
+              element={<ProtectedRoute element={Todos} />}
+            />
+            <Route
+              path="/notes"
+              element={<ProtectedRoute element={Notes} />}
+            />
+            <Route
+              path="/statistics"
+              element={<ProtectedRoute element={Statistics} />}
             />
             {/* <Route
               path="/OtherPath2"
