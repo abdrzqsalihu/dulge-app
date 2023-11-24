@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Kanban() {
+function Statistics() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Kanban() {
   )
 }
 
-export default Kanban
+export default Statistics
