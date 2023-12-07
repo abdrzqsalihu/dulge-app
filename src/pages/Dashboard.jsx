@@ -26,12 +26,20 @@ function Dashboard() {
             {user.displayName || user.email}!
           </p>
         )}
-<hr style={{height: "1px", border: "none", backgroundColor: "#d3d3d3"}} />
+        <hr
+          style={{ height: "1px", border: "none", backgroundColor: "#d3d3d3" }}
+        />
         <div style={{ margin: "auto" }} className="center">
           {" "}
           <br />
           <br />
-          <h5 style={{ textShadow: "2px 2px 5px #1B89FA", fontSize: "1.8rem", fontWeight: "600" }}>
+          <h5
+            style={{
+              textShadow: "2px 2px 5px #1B89FA",
+              fontSize: "1.8rem",
+              fontWeight: "600",
+            }}
+          >
             Omor I still dey cook!👨🏽‍🍳🍳
           </h5>{" "}
           <br />

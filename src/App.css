@@ -474,3 +474,23 @@ font-weight: 600;
       margin-left: 260px;
     }
 }
+
+/* .active{
+  border-right: #1B89FA solid 5px;
+} */
+
+.active::after {
+  content: "";
+  display: block;
+  height: 3%;
+  width: 6px;
+  background-color: #1B89FA;
+  position: absolute;
+  top: 1;
+  right: 0;
+  margin-top: -10%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+

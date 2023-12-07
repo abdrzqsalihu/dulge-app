@@ -28,7 +28,7 @@ function App() {
     location.pathname === "/Kanban" ||
     location.pathname === "/kanban" ||
     location.pathname === "/Todos" ||
-    location.pathname === "/todos" ||
+    location.pathname === "/todos" || 
     location.pathname === "/Notes" ||
     location.pathname === "/notes" ||
     location.pathname === "/Statistics" ||
