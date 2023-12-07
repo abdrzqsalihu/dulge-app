@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 import Logo from "../assets/img/logo.png";
 import { sidebarLinks } from "../constant/ContentConstants";
@@ -98,10 +98,10 @@ function Sidebar() {
             <br />
             {sidebarLinks.map((link) => (
               <li key={link.id}>
-                <Link to={`/${link.id}`} style={link_color}>
+                <NavLink to={`/${link.id}`} activeClassName="active NavLink" style={link_color}>
                   <i dangerouslySetInnerHTML={{ __html: link.icon }} />{" "}
                   <span style={{ marginLeft: "5px" }}>{link.title}</span>
-                </Link>
+                </NavLink>
               </li>
             ))}
             <li>
